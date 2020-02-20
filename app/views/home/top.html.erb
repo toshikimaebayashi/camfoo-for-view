@@ -1,0 +1,47 @@
+<div class="top">
+  <div class="top-container">
+    <div class="firstVisual-container bg-style" style="background-image: url('<%= " images/top/top_fv01.jpg " %>');">
+      <div class="title-container">
+        <h1 class="appTitle">Camfoo</h1>
+        <p class="appSubTitle">明大前に特化したクーポンサイト</p>
+      </div>
+    </div>
+    <div class="tab-container"></div>
+    <div class="topCouponList-container mt10">
+      <div class="ad-contents">
+        <iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=287&l=ur1&category=amazonstudent&banner=0CM47STQBHNTXXD5QSG2&f=ifr&linkID=a25f83babdf25401c955ed77a2b90f60&t=cam08foo-22&tracking_id=cam08foo-22" width="320" height="48" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+      </div>
+      <ul class="topCoupon-list">
+        <% @coupons.each do |coupon| %>
+          <li class="topCoupon-item">
+            <%= link_to "/coupon/#{coupon.id}" do %>
+              <div class="topCoupon-image bg-style" style="background-image: url('<%= " images/coupon_eyecatch/img_coupon#{coupon.id}.jpg " %>');">
+                <% if coupon.flag == 1 %>
+                  <div class="topCoupon-flag">
+                    <p>3ヶ月に1回のみ</p>
+                  </div>
+                <% end %>
+              </div>
+              <div class="topCoupon-detail">
+                <p class="topCouponTitle">
+                  <%= coupon.storeName %>
+                </p>
+              </div>
+              <div class="topCompany-detail">
+                <p class="topCompanyName">
+                  <%= coupon.listCouponTitle %>
+                </p>
+              </div>
+            <% end %>
+          </li>
+        <% end %>
+      </ul>
+      <div class="ad-contents">
+        <iframe src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=287&l=ur1&category=amazonstudent&banner=0CM47STQBHNTXXD5QSG2&f=ifr&linkID=a25f83babdf25401c955ed77a2b90f60&t=cam08foo-22&tracking_id=cam08foo-22" width="320" height="48" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+      </div>
+      <div class="caution-box">
+        <p>クーポンは今後追加されていきます</p>
+      </div>
+    </div>
+  </div>
+</div>

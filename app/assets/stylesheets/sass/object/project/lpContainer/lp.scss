@@ -1,0 +1,495 @@
+@import "../../../extention/color";
+
+.lp {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "a-otf-midashi-go-mb31-pr6n", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-feature-settings: "palt";
+  width: 100%;
+
+  .fv {
+    height: 600px;
+    position: relative;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .fv-content {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding-top: 75px;
+      z-index: 9;
+      position: relative;
+
+      .mock-img {
+        width: 414px;
+        position: relative;
+        display: inline-block;
+        margin-right: 100px;
+      }
+
+      .fv-title {
+        display: inline-block;
+
+        .mainTitle {
+          color: $color-white;
+          font-size: 74px;
+          line-height: 1.4;
+        }
+
+        .registerBtn-wrapper {
+          border-radius: 40px;
+          background-color: $color-orange;
+          font-weight: bold;
+          padding: 18px;
+          text-align: center;
+          margin-top: 20px;
+          border: 5px solid $color-white;
+          letter-spacing: 2px;
+          width: 380px;
+
+          a {
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+  .sub-wrapper {
+    z-index: 9900;
+    position: relative;
+
+    .about {
+      margin: 0 0 20px 0;
+      padding: 40px 0 30px 0;
+      background-color: $color-lightPink;
+      text-align: center;
+
+      &.about_items {
+        padding: 0 0 30px 0;
+      }
+
+      .copy {
+        margin-bottom: 40px;
+        font-size: 34px;
+        line-height: 2.3;
+        letter-spacing: 0.2em;
+        font-feature-settings: "palt";
+        -webkit-font-smoothing: antialiased;
+
+        span {
+          border-bottom: solid 4px $color-strongOrange;
+          padding-bottom: 5px;
+        }
+      }
+
+      .about_title {
+        font-family: "Amiko";
+        font-size: 32px;
+        font-weight: semibold;
+        color: $color-strongOrange;
+        letter-spacing: 0.1em;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .about_text {
+        margin-top: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 2;
+        letter-spacing: 0.15em;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .column_container {
+        margin-top: 40px;
+
+        .column {
+          box-sizing: border-box;
+          display: inline-block;
+          vertical-align: top;
+          width: 28%;
+          max-width: 320px;
+          min-height: 310px;
+          border-bottom: solid 1px $color-shadowYellow;
+          margin: 0 10px;
+          padding: 40px 10px;
+          background-color: $color-white;
+
+          .item-icon {
+            font-size: 37px;
+            margin: 5px 0 0;
+
+            img {
+              width: 58px;
+            }
+          }
+          .column_title {
+            margin: 20px 0 15px 0;
+            font-size: 16px;
+            line-height: 2;
+            letter-spacing: 0.08em;
+            -webkit-font-smoothing: antialiased;
+            strong {
+              border-bottom: solid 4px $color-strongOrange;
+              padding-bottom: 4px;
+            }
+          }
+          .column_text {
+            font-size: 13px;
+            line-height: 1.8;
+            letter-spacing: 0.05em;
+          }
+        }
+      }
+      .coupon-use {
+        width: 1200px;
+        margin: 50px auto 0;
+        
+        .useCoupon-block {
+          text-align: center;
+          width: 450px;
+          display: inline-block;
+        }
+        .useInfo-box {
+          box-sizing: border-box;
+          vertical-align: middle;
+          width: 100%;
+          font-size: 20px;
+          margin-top: 25px;
+          line-height: 2;
+          letter-spacing: 0.15em;
+          h3 {
+            font-size: 21px;
+            margin-bottom: 10px;
+            font-weight: bold;
+          }
+          p {
+            font-size: 16px;
+            line-height: 1.8;
+            letter-spacing: 0.05em;
+          }
+          &.-image {
+            width: 61%;
+            margin: 0 auto;
+          }
+        }
+      }
+      .users_voice {
+        text-align: center;
+        margin: 60px 0 0;
+
+        li {
+          width: 300px;
+          margin: 0 15px 30px;
+          display: inline-block;
+          vertical-align: top;
+          border: 5px solid $color-white;
+
+          .voice_photo {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            cursor: pointer;
+          }
+
+          .topCoupon-detail {
+            padding: 8px 20px;
+            background-image: linear-gradient(-45deg, #fff 25%, #fee0c7 25%, #fee0c7 50%, #fff 50%, #fff 75%, #fee0c7 75%, #fee0c7);
+            background-size: 3px 3px;
+            color: $color-brawn;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+          }
+
+          .voice_info {
+            background: $color-orange;
+            padding: 13px 20px;
+            text-align: right;
+            min-height: 100px;
+            box-sizing: border-box;
+
+            .voice_title {
+              font-size: 25px;
+              line-height: 1.5;
+              letter-spacing: 1px;
+              text-align: center;
+              font-weight: bold;
+              color: $color-white;
+              cursor: pointer;
+            }
+
+            .voice_prof {
+              display: inline-block;
+              color: $color-shadowGray;
+              background: $color-white;
+              font-size: 10px;
+              line-height: 1;
+              padding: 4px 8px;
+              font-weight: bold;
+              letter-spacing: .1em;
+              vertical-align: middle;
+              border-radius: 3px;
+              font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "a-otf-midashi-go-mb31-pr6n", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+              font-feature-settings: "palt";
+            }
+          }
+        }
+      }
+    }
+  }
+  .floating-banner {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(74, 74, 74, 0.7);
+    opacity: 1;
+    box-shadow: 0 6px 40px 0 rgba(56, 6, 24, 0.1);
+    z-index: 9999;
+    
+    .act-button {
+      display: block;
+      max-width: 450px;
+      padding: 15px 50px;
+      background: $color-orange;
+      border-radius: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 0px auto;
+      color: $color-white;
+    }
+  }
+}
+
+.sp {
+  display: none !important;
+}
+
+@media screen and (max-width: 900px) {
+  .pc {
+    display: none !important;
+  }
+
+  .sp {
+    display: block !important;
+  }
+
+  .lp {
+    .fv {
+      height: auto;
+
+      .fv-content {
+        padding: 10px 0 30px;
+
+        .mock-img {
+          width: 75%;
+          margin: 0 auto;
+          position: relative;
+          display: block;
+          margin-right: auto;
+        }
+
+        .fv-title {
+          display: block;
+          text-align: center;
+          padding-bottom: 25px;
+
+          .mainTitle {
+            color: $color-white;
+            font-size: 39px;
+            line-height: 1.2;
+            text-align: center;
+            text-shadow: 0 1px 2px $color-darkBlue;
+            font-weight: 900;
+            font-family: "Noto Sans JP", sans-serif;
+
+            span {
+              font-size: 16px;
+              font-weight: normal;
+            }
+          }
+        }
+      }
+    }
+
+    .register-block {
+      width: 100%;
+      background-color: $color-orange;
+      text-align: center;
+      padding: 25px 0;
+
+      span {
+        margin-bottom: 10px;
+        color: $color-white;
+        font-size: 14px;
+        font-family: "Noto Sans JP", sans-serif;
+        letter-spacing: 1px;
+      }
+
+      p {
+        color: $color-orange;
+        padding: 13px 0;
+        background: $color-white;
+        width: 90%;
+        border: 3px solid $color-strongOrange;
+        border-radius: 42px;
+        margin: 10px auto;
+        font-size: 17px;
+      }
+    }
+
+    .sub-wrapper {
+      margin-bottom: 74px;
+
+      .about {
+        margin: 0 0 20px 0;
+        padding: 40px 0 30px 0;
+
+        .act-button {
+          display: block;
+          max-width: 450px;
+          padding: 15px 50px;
+          background: $color-orange;
+          border-radius: 50px;
+          text-align: center;
+          text-decoration: none;
+          margin: 0px auto;
+          color: $color-white;
+          margin: 0 20px 50px;
+        }
+
+        &.about_items {
+          padding: 40px 0 30px 0;
+
+          .topCoupon-list {
+            width: 98%;
+            margin: 0 auto;
+
+            .topCoupon-item {
+              display: inline-block;
+              vertical-align: top;
+              width: 47.6%;
+              margin-bottom: 6px;
+              text-align: left;
+              border: 3px solid $color-white;
+              border-radius: 3px;
+
+              &::nth-child(odd) {
+                margin-right: 0;
+              }
+
+              .topCoupon-image {
+                height: 150px;
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+                position: relative;
+              }
+
+              .topCoupon-detail {
+                padding: 5px 10px;
+                background-image: linear-gradient(-45deg, #fff 25%, #fee0c7 25%, #fee0c7 50%, #fff 50%, #fff 75%, #fee0c7 75%, #fee0c7);
+                background-size: 3px 3px;
+                color: $color-brawn;
+                font-weight: bold;
+                font-size: 12px;
+              }
+
+              .topCompany-detail {
+                padding: 10px;
+                height: 54px;
+                background: $color-orange;
+                font-size: 18px;
+                font-weight: bold;
+                color: $color-white;
+                border-bottom-left-radius: 3px;
+                border-bottom-right-radius: 3px;
+              }
+            }
+          }
+        }
+
+        .copy {
+          margin: 0 0 20px 0;
+          font-size: 22px;
+        }
+
+        .about_title {
+          font-size: 24px;
+          margin-bottom: 30px;
+        }
+
+        .coupon-use {
+          width: 100%;
+          margin: 0px auto;
+
+          .useInfo-box {
+            box-sizing: border-box;
+            vertical-align: middle;
+            width: 100%;
+            font-size: 20px;
+            color: $color-white;
+            padding: 95px 0 46px;
+            margin-top: -105px;
+            background: $color-orange;
+            line-height: 2;
+            letter-spacing: 0.15em;
+
+            &.-image {
+              width: 61%;
+              margin: 0 auto;
+              padding-top: 35px;
+              background: none;
+            }
+          }
+
+          .useCoupon-block {
+            text-align: center;
+            width: 100%;
+            display: block;
+
+            &:last-child {
+              margin-top: 45px;
+            }
+          }
+        }
+
+        .about_text {
+          margin-top: 10px;
+          font-size: 14px;
+          font-weight: normal;
+          letter-spacing: 0.05em;
+        }
+
+        .column_container {
+          margin-top: 40px;
+
+          .column {
+            display: block;
+            width: 94%;
+            max-width: none;
+            height: auto;
+            min-height: initial;
+            margin: 0 auto 3% auto;
+            padding: 30px 10px;
+
+            .column_title {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

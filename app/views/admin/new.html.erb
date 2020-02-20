@@ -1,0 +1,17 @@
+<div class="container">
+  <%= form_tag("create") do %>
+    <div class="form">
+      <div class="form-body">
+        <p>クーポン一覧タイトル</p> <textarea name="listCouponTitle"></textarea>
+        <p>クーポン詳細タイトル</p> <textarea name="couponTitle"></textarea>
+        <p>店名</p> <textarea name="storeName"></textarea>
+        <p>利用時間</p> <textarea name="utilityTime"></textarea>
+        <p>フラグ</p> <textarea name="flag"></textarea>
+        <p>利用日</p> <textarea name="utilityDay"></textarea>
+        <p>店詳細URL</p> <textarea name="storeDetailUrl"></textarea>
+        <p>店位置情報URL</p> <textarea name="storeLocationUrl"></textarea>
+        <p>利用条件</p> <textarea name="condition"></textarea> <input type="submit" value="投稿"> 
+      </div>
+    </div>
+    <% end %>
+</div>

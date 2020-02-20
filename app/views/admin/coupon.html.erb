@@ -1,0 +1,42 @@
+<div class="data-table">
+  <p class="tableTitle">クーポンのデータ一覧</p>
+  <%= link_to("新規投稿はこちら", "/admin/new") %>
+  <table class="table">
+    <thead>
+      <tr>
+        <th></th>
+        <th></th>
+        <th>id名</th>
+        <th>クーポン一覧タイトル</th>
+        <th>クーポン詳細タイトル</th>
+        <th>店名</th>
+        <th>画像名</th>
+        <th>利用時間</th>
+        <th>フラグ</th>
+        <th>利用日にち</th>
+        <th>店の詳細URL</th>
+        <th>店の場所URL</th>
+        <th>利用条件</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @coupons.each do |coupon| %>
+        <tr>
+          <td><%= link_to("削除する", "/admin/#{coupon.id}/destroy", {method: "post"}) %></td>
+          <td><%= link_to("編集する", "/admin/#{coupon.id}/edit") %></td>
+          <td><%= coupon.id %></td>
+          <td><%= coupon.listCouponTitle %></td>
+          <td><%= coupon.couponTitle %></td>
+          <td><%= coupon.storeName %></td>
+          <td><%= coupon.imageName %></td>
+          <td>なし</td>
+          <td><%= coupon.flag %></td>
+          <td><%= coupon.utilityDay %></td>
+          <td><%= coupon.storeDetailUrl %></td>
+          <td><%= coupon.storeLocationUrl %></td>
+          <td><%= coupon.condition %></td>
+        </tr>
+        <% end %>
+    </tbody>
+  </table>
+</div>

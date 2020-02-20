@@ -1,0 +1,132 @@
+<div class="coupon">
+  <div class="coupon-container">
+    <div class="couponTitle-block">
+      <h2 class="couponTitle">
+        <%= simple_format(@coupon.couponTitle) %>
+      </h2>
+    </div>
+    <div class="couponImage-block">
+      <div class="couponImage bg-style" style="background-image: url('<%= " /images/coupon_eyecatch/img_coupon#{@coupon.id}.jpg " %>');">
+        <% if @coupon.flag == 1 %>
+          <div class="topCoupon-flag">
+            <p>3ヶ月に1回のみ</p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="couponDetail-block">
+      <div class="couponDetail-wrap">
+        <div class="couponCompany-block">
+          <p class="couponComapany">
+            <%= @coupon.storeName %>
+          </p>
+        </div>
+        <div class="couponBtn-block">
+          <% if UsedCoupon.find_by(user_id: current_user.id, coupon_id: @coupon.id) %>
+            <p class="couponBtn -used"> <label class="open_button" id="btn">クーポン使用済み</label> </p>
+          <% else %>
+            <p class="couponBtn" onclick="btnClickEvent()"> <label class="open_button" id="btn">クーポンを使う</label> </p>
+          <% end %>
+        </div>
+        <div class="couponUseTime-block">
+          <p class="useTitle">利用可能時間</p>
+          <p class="useTime">いつでも可<span class="otherDay"></span></p>
+        </div>
+        <div class="couponInfo-block mt10">
+          <div class="couponInfo-item">
+            <%= link_to @coupon.storeLocationUrl do %>
+              <p class="item-icon"><i class="fas fa-map-marker-alt"></i></p>
+              <p class="couponInfo">場所</p>
+            <% end %>
+          </div>
+          <div class="couponInfo-item">
+            <%= link_to @coupon.storeDetailUrl do %>
+              <p class="item-icon"><i class="fas fa-utensils"></i></p>
+              <p class="couponInfo">店の詳細</p>
+            <% end %>
+          </div>
+          <div class="couponInfo-item" onclick="btnInfoClickEvent()">
+            <p class="item-icon"><i class="fas fa-info-circle"></i></p>
+            <p class="couponInfo">使用条件</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="couponUse_container">
+          <div class="couponTitle-block -modalBlock">
+            <h2 class="couponTitle -modal">
+              <%= simple_format(@coupon.couponTitle) %>
+            </h2>
+          </div>
+          <div class="couponUseImage-block">
+            <div class="couponUseImage bg-style" style="background-image: url('<%= " /images/coupon_eyecatch/img_coupon#{@coupon.id}.jpg " %>');"></div>
+          </div>
+          <div class="couponUseDetail-block">
+            <div class="couponBtn-block">
+              <% if @coupon.flag == 1 %>
+                <%= link_to("/usedcoupon/#{@coupon.id}/create", {method: "post"}) do %>
+                  <p class="couponBtn -modal"> <label class="open_button">クーポンを使う</label> </p>
+                <% end %>
+              <% else %>
+                <%= link_to "/coupon/usedcoupon/#{@coupon.id}" do %>
+                  <p class="couponBtn -modal"> <label class="open_button">クーポンを使う</label> </p>
+                <% end %>
+              <% end %>
+            </div>
+            <div class="detailExplanation-block">
+              <p>このクーポンを利用する場合は、<br>上のボタンをクリック</p>
+            </div>
+            <div class="close-block"> <label class="closeBtn" id="closeBtn" onclick="closeBtnClickEvent()">✖️</label> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="info-modal" class="modal -info">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="couponUse_container">
+          <div class="couponTitle-block -modalBlock">
+            <h2 class="couponTitle -modal">使用条件</h2>
+          </div>
+          <div class="couponUseDetail-block">
+            <div class="detailExplanation-block">
+              <div class="detailExplanation-block -infoBlock">
+                <p><%= simple_format(@coupon.condition) %></p>
+              </div>
+            </div>
+            <div class="close-block"><label class="closeBtn" id="closeBtn" onclick="closeBtnInfoClickEvent()">✖️</label> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    function btnClickEvent() {
+      gtag('event','open_coupon_modal',{method:'Google'});
+      var modal = document.getElementById('modal');
+      modal.style.display = 'block';
+    };
+
+    function closeBtnClickEvent() {
+      var modal = document.getElementById('modal');
+  　   modal.style.display = 'none';
+    };
+    
+    function btnInfoClickEvent() {
+      var modal = document.getElementById('info-modal');
+  　   modal.style.display = 'block';
+    };
+
+    function closeBtnInfoClickEvent() {
+      var modal = document.getElementById('info-modal');
+  　   modal.style.display = 'none';
+    };
+  </script>
+</div>

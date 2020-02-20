@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <meta charset="UTF-8">
+  <title>無料で使えるクーポンサイト Camfoo(キャンフー) |明大生向けお得なクーポンを掲載中！</title>
+  <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="クーポンサイトCamfoo(キャンフー)は、無料で使える明治大学生向けのクーポンサイトです。大学周辺のお店のクーポンを中心に掲載中！お得に明大前を楽しめるこの機会をお見逃しなく！">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"> 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41300136-14"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-41300136-14');
+    gtag('config', 'GA_MEASUREMENT_ID', {
+      'user_id': 'USER_ID'
+    });
+  </script>
+</head>
+<body>
+  <% if flash[:notice] %>
+    <div class="flash">
+      <%= flash[:notice] %>
+    </div>
+  <% end %>
+  <div class="wrapper <%= controller.controller_name %>">
+    <% if user_signed_in? %>
+    <header>
+      <div id="nav-drawer"> 
+        <input id="nav-input" type="checkbox" class="nav-unshown"> 
+        <label id="nav-open" for="nav-input"><span></span></label> 
+        <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+        <div id="nav-content"> 
+          <label id="nav-close-btn" for="nav-input"><span></span></label>
+          <ul class="header-list">
+            <li class="listItem"><p class="nowLogin">ログインしています</p></li>
+            <li class="listItem"><%= link_to("TOP", "/") %></li>
+            <li class="listItem"><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <% end %>
+    <%= yield %>
+    <% if user_signed_in? %>
+    <footer>
+      <ul class="footer-list">
+        <li class="footerItem"><p><%= link_to("プライバシーポリシー", "/privacy") %></p></li>
+      </ul>
+    </footer>
+    <% end %>
+  </div>
+</body>
+</html>

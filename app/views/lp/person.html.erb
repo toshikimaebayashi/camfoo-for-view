@@ -1,0 +1,128 @@
+<section class="fv bg-style" style="background-image: url('<%= " /images/top/top_fv01.jpg " %>');">
+  <div class="fv-content">
+    <div class="fv-title sp">
+      <h1 class="mainTitle"><span>明大前をお得に楽しむ</span><br>クーポンアプリ</h1>
+    </div>
+    <div class="mock-img"><img src="/images/lp/lp-mock01.png"></div>
+    <div class="fv-title pc">
+      <h1 class="mainTitle">明大前を<br>お得に楽しむ<br>クーポンアプリ</h1>
+      <p class="registerBtn-wrapper">
+        <%= link_to "/users/sign_up" do %>
+          ユーザー登録はこちらから
+        <% end %>
+      </p>
+    </div>
+  </div>
+</section>
+<div class="register-block sp">
+  <span>登録してクーポンを利用しよう！</span>
+  <%= link_to "/users/sign_up" do %>
+    <p>ユーザー登録はこちらから</p> 
+  <% end %>
+</div>
+<section class="sub-wrapper">
+  <section class="about">
+    <h1 class="copy"><span>明大生限定！</span><br><span>総額1万円以上の</span><br><span>クーポンが無料で手に入る！</span></h1>
+    <p class="about_text"> 明大前で使えるクーポンアプリ！<br> タピオカ半額やアルコール1杯99円など<br>魅力的なクーポンばかりです！</p>
+    <p class="about_text"> 総額1万円以上のクーポンが<br>無料で手に入るチャンス！ </p>
+    <div class="column_container">
+      <article class="column">
+        <div class="column_img">
+          <p class="item-icon"><i class="fas fa-copy"></i></p>
+        </div>
+        <h2 class="column_title"> 通常クーポンはいつでも、<br>何回でも使える！</h2>
+        <p class="column_text"> クーポンはプレミアムクーポンと<br>普通のクーポンがあり、後者は<br>何回でも使うことができます。 </p>
+      </article>
+      <article class="column">
+        <div class="column_img">
+          <p class="item-icon"><img src="/images/lp/lp_icon03.png"></p>
+        </div>
+        <h2 class="column_title"> 最大で<strong>半額の</strong>クーポンも！ </h2>
+        <p class="column_text"> 飲食店や、娯楽施設など<br> 様々な店舗の<br> クーポンを扱っています。</p>
+      </article>
+      <article class="column">
+        <div class="column_img">
+          <p class="item-icon"><img src="/images/lp/lp_icon02.png"></p>
+        </div>
+        <h2 class="column_title"> <strong>無料で</strong>使える！</h2>
+        <p class="column_text"> クーポンアプリ自体は<br> 無料で何度も<br> 使うことができます。</p>
+      </article>
+    </div>
+  </section>
+  <div class="register-block sp">
+    <span>登録してクーポンを利用しよう！</span>
+    <%= link_to "/users/sign_up" do %>
+      <p>ユーザー登録はこちらから</p>
+    <% end %>
+  </div>
+  <section class="about -howto">
+    <h2 class="copy"><span>クーポンを選んで</span><br><span>店の店員に見せて使おう！</span></h2>
+    <p class="about_text"> 一覧から気になるクーポンを選んで<br>店に行って店員に見せよう！ </p>
+    <div class="coupon-use">
+      <div class="useCoupon-block">
+        <div class="useInfo-box -image"><img src="/images/lp/lp-mock01.png"></div>
+        <div class="useInfo-box">
+          <h3>①一覧からクーポンを選ぼう！</h3>
+          <p class="sp"> クーポン一覧から、あなたの<br> 気になるクーポンを選んでクリック</p>
+        </div>
+      </div>
+      <div class="useCoupon-block">
+        <div class="useInfo-box -image"><img src="/images/lp/lp-mock02.png"></div>
+        <div class="useInfo-box">
+          <h3>②注文時にクーポンを見せる</h3>
+          <p class="sp"> クーポンや店の詳細確認して<br> クーポンを店員に見せてください。</p>
+        </div>
+      </div>
+    </div>
+    <div class="coupon-use"></div>
+  </section>
+  <section class="about about_items pc">
+    <h2 class="about_title">クーポン例</h2>
+    <ul class="users_voice">
+      <%  count = 0
+          @couponElements.each do |id, storeName, couponTitle| 
+           count += 1
+           if count == 4
+             break
+           else %>
+           <li>
+             <div class="voice_photo user_01" style="background-image: url('<%= " /images/coupon_eyecatch/img_coupon#{id}.jpg " %>');"></div>
+             <div class="topCoupon-detail">
+               <p class="topCouponTitle"> <%= storeName %></p>
+             </div>
+             <div class="voice_info">
+               <h2 class="voice_title"><%= couponTitle %></h2>
+            </div>
+          </li>
+          <% end %>
+       <% end %>
+    </ul>
+  </section>
+  <section class="about about_items sp">
+    <h2 class="about_title">クーポン例</h2>
+    <ul class="topCoupon-list">
+      <% @couponElements.each do |id, storeName, couponTitle| %>
+        <li class="topCoupon-item">
+          <div class="topCoupon-image bg-style" style="background-image: url('<%= " /images/coupon_eyecatch/img_coupon#{id}.jpg " %>');"> </div>
+          <div class="topCoupon-detail">
+            <p class="topCouponTitle"> <%= storeName %> </p>
+          </div>
+          <div class="topCompany-detail">
+            <p class="topCompanyName"> <%= couponTitle %> </p>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  </section>
+  <div class="register-block sp">
+    <span>登録してクーポンを利用しよう！</span>
+    <%= link_to "/users/sign_up" do %>
+      <p>ユーザー登録はこちらから</p>
+    <% end %>
+  </div>
+</section>
+<div class="floating-banner js-floating-banner sp"> 
+  <%= link_to "/users/sign_up", class: "act-button" do %>
+    <span class="action free-batch">登録してクーポンを利用する</span>
+  <% end %>
+</div>

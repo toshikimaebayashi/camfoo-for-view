@@ -1,0 +1,30 @@
+<div class="sub">
+  <div class="commonBox-container">
+    <h2 class="contactTitle">ログイン</h2>
+    <% if @error_message %>
+      <div class="form-error">
+        <%= @error_message %>
+      </div>
+    <% end %>
+    <%= form_tag("/login") do %>
+      <div class="contact-box">
+        <span class="itemName">メールアドレス</span>
+        <div class="text-wrap">
+          <input type="text" name="email" value="<%= @email %>">
+        </div>
+      </div>
+      <div class="contact-box">
+        <span class="itemName">パスワード</span>
+        <div class="text-wrap">
+          <input type="password" name="password" value="<%= @password %>">
+        </div>
+      </div>
+      <div class="submit-wrap">
+        <input type="submit" name="" value="ログイン">
+      </div>
+      <div class="submit-wrap -signup">
+        <%= link_to("新規登録はこちら", "/signup") %>
+      </div>
+    <% end %>
+  </div>
+</div>

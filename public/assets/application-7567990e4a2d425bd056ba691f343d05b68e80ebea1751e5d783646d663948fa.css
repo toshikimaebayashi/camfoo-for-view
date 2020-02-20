@@ -1,0 +1,1460 @@
+@charset "UTF-8";
+/* line 3, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/foundation/base.scss */
+body {
+  margin: 0;
+  color: #333;
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",Osaka,arial,verdana,sans-serif;
+  background-color: #F4E6D7;
+}
+
+/* line 10, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/foundation/base.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 26, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/foundation/base.scss */
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* line 33, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/foundation/base.scss */
+figure.image {
+  margin: 0;
+}
+
+/* line 37, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/foundation/base.scss */
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* line 42, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/foundation/base.scss */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 47, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/foundation/base.scss */
+.wrapper {
+  max-width: 420px;
+  margin: 0 auto;
+}
+/* line 3, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/layout/footer.scss */
+.footer {
+  background: #2f251d;
+  margin-top: 40px;
+}
+/* line 7, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/layout/footer.scss */
+.footer .footer-list {
+  text-align: center;
+  padding: 20px 0;
+}
+/* line 11, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/layout/footer.scss */
+.footer .footer-list .footerItem {
+  margin-bottom: 7px;
+}
+/* line 14, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/layout/footer.scss */
+.footer .footer-list .footerItem a {
+  color: #fff;
+}
+/* line 3, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/layout/tab.scss */
+.tab-container {
+  height: 50px;
+  background: #F0F0F0;
+}
+@charset "UTF-8";
+/* ボタンのデザイン */
+/* line 6, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/button.scss */
+.couponBtn-block .couponBtn {
+  background: #ff7400;
+  padding: 13px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #fff;
+  border-radius: 60px;
+  font-weight: bold;
+  border: 4px solid #fff;
+}
+/* line 17, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/button.scss */
+.couponBtn-block .couponBtn.-modal {
+  border: none;
+  padding: 16px;
+  font-size: 17px;
+}
+/* line 3, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/common.scss */
+.bg-style {
+  background-position: center center;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 12, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/common.scss */
+.couponTitle-block {
+  padding: 25px 10px;
+  background-image: linear-gradient(-45deg, #fff 25%, #fee0c7 25%, #fee0c7 50%, #fff 50%, #fff 75%, #fee0c7 75%, #fee0c7);
+  background-size: 3px 3px;
+}
+/* line 26, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/common.scss */
+.couponTitle-block.-modalBlock {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+/* line 31, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/common.scss */
+.couponTitle-block .couponTitle {
+  color: #714828;
+  font-size: 38px;
+  font-weight: 900;
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+}
+/* line 39, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/common.scss */
+.couponTitle-block .couponTitle.-modal {
+  font-size: 28px;
+}
+/* line 3, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/form.scss */
+.contact-container {
+  line-height: 1.6;
+  background: #fff;
+  padding: 20px;
+  margin: 30px auto;
+  width: 80%;
+  border-radius: 7px;
+}
+/* line 12, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/form.scss */
+.contact-container .contactTitle {
+  font-size: 32px;
+  text-align: center;
+  color: #714828;
+  margin-bottom: 20px;
+}
+/* line 19, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/form.scss */
+.contact-container .contact-box {
+  margin-bottom: 15px;
+}
+/* line 22, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/form.scss */
+.contact-container .contact-box .itemName {
+  font-size: 14px;
+}
+/* line 26, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/form.scss */
+.contact-container .contact-box .text-wrap {
+  margin-top: 3px;
+}
+/* line 29, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/form.scss */
+.contact-container .contact-box .text-wrap input[type="text"] {
+  width: 93%;
+  max-width: 400px;
+  padding: 10px;
+  background: #F0F0F0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* line 42, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/form.scss */
+.contact-container .contact-box .text-wrap textarea {
+  width: 93%;
+  height: 240px;
+  padding: 7px;
+  border: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: #F0F0F0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* line 57, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/form.scss */
+.contact-container .submit-wrap {
+  width: 100%;
+  margin: 40px auto 10px;
+}
+/* line 61, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/form.scss */
+.contact-container .submit-wrap input[type="submit"] {
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border-radius: 2px;
+  background-color: #ff9f4f;
+  color: #fff;
+  font-weight: bold;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  margin: 0 auto;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+/* line 4, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container {
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 9, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponImage-block .couponImage {
+  height: 360px;
+}
+/* line 14, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponDetail-block {
+  background-color: #2F251D;
+}
+/* line 17, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap {
+  width: 93%;
+  margin: 0 auto;
+  padding: 5px 0 20px;
+}
+/* line 22, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponCompany-block {
+  margin: 5px 0;
+}
+/* line 25, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponCompany-block .couponComapany {
+  text-align: right;
+  color: #fff;
+  font-size: 14px;
+}
+/* line 33, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponBtn-block .couponBtn {
+  background: #ff7400;
+  padding: 13px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #fff;
+  border-radius: 60px;
+  font-weight: bold;
+  border: 4px solid #fff;
+}
+/* line 46, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponUseTime-block {
+  color: #fff;
+  margin-top: 15px;
+}
+/* line 50, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponUseTime-block .useTitle {
+  font-size: 14px;
+}
+/* line 54, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponUseTime-block .useTime {
+  font-size: 24px;
+  font-weight: bold;
+}
+/* line 58, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponUseTime-block .useTime .otherDay {
+  font-size: 14px;
+  font-weight: normal;
+}
+/* line 66, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponInfo-block .couponInfo-item {
+  display: inline-block;
+  border: 2px solid #fff;
+  padding: 7px;
+  border-radius: 5px;
+  color: #fff;
+  width: 26.4%;
+  margin-right: 1%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 19px;
+}
+/* line 78, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponInfo-block .couponInfo-item:last-child {
+  margin-right: 0;
+}
+/* line 82, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponInfo-block .couponInfo-item .item-icon {
+  font-size: 37px;
+  margin: 5px 0 0;
+}
+/* line 4, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/couponModal.scss */
+.couponUse-wraper input {
+  display: none;
+}
+/* line 8, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/couponModal.scss */
+.couponUse-wraper .couponUse_overlay {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.5s, transform 0s 0.5s;
+  transform: scale(0);
+}
+/* line 23, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/couponModal.scss */
+.couponUse-wraper .couponUse_overlay .modal_trigger {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* line 29, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/couponModal.scss */
+.couponUse-wraper .couponUse_overlay .couponUse_container {
+  align-self: center;
+  width: 85%;
+  max-width: 350px;
+  box-sizing: border-box;
+  background: #FFEEE0;
+  line-height: 1.4em;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin-top: -80px;
+}
+/* line 40, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/couponModal.scss */
+.couponUse-wraper .couponUse_overlay .couponUse_container .couponUseDetail-block {
+  width: 95%;
+  margin: 15px auto;
+}
+/* line 43, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/couponModal.scss */
+.couponUse-wraper .couponUse_overlay .couponUse_container .couponUseDetail-block .detailExplanation-block {
+  text-align: center;
+  margin: 5px 0 10px;
+  color: #433D3D;
+  font-size: 12px;
+  line-height: 1.4;
+}
+/* line 53, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/couponModal.scss */
+.couponUse-wraper .couponUse_overlay .couponUse_container .couponUseImage-block .couponUseImage {
+  height: 280px;
+}
+/* line 58, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/couponModal.scss */
+.couponUse-wraper .couponUse_overlay .couponUse_container .close-block {
+  top: 562px;
+  left: 0;
+  right: 0;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  margin: 25px 0 30px;
+}
+/* line 68, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/couponModal.scss */
+.couponUse-wraper .couponUse_overlay .couponUse_container .close-block .closeBtn {
+  background: #fff;
+  border-radius: 39px;
+  padding: 10px;
+}
+
+/* line 78, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/couponModal.scss */
+.couponUse-wraper input:checked ~ .couponUse_overlay {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.5s;
+}
+
+/* line 84, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/couponModal.scss */
+.couponUse-wraper input:checked ~ .couponUse_overlay .couponUse_content {
+  transform: scale(1);
+}
+/* line 3, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/subContainer/sub.scss */
+.sub {
+  min-height: 700px;
+  margin-top: 100px;
+}
+/* line 4, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/topContainer/couponList.scss */
+.topCouponList-container .topCoupon-list {
+  width: 98%;
+  margin: 0 auto;
+}
+/* line 8, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/topContainer/couponList.scss */
+.topCouponList-container .topCoupon-list .topCoupon-item {
+  display: inline-block;
+  width: 47.6%;
+  margin-bottom: 6px;
+  border: 3px solid #fff;
+  border-radius: 3px;
+}
+/* line 15, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/topContainer/couponList.scss */
+.topCouponList-container .topCoupon-list .topCoupon-item:nth-child(odd) {
+  margin-right: 0;
+}
+/* line 19, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/topContainer/couponList.scss */
+.topCouponList-container .topCoupon-list .topCoupon-item .topCoupon-image {
+  height: 150px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+/* line 25, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/topContainer/couponList.scss */
+.topCouponList-container .topCoupon-list .topCoupon-item .topCoupon-detail {
+  padding: 5px 10px;
+  background-image: linear-gradient(-45deg, #fff 25%, #fee0c7 25%, #fee0c7 50%, #fff 50%, #fff 75%, #fee0c7 75%, #fee0c7);
+  background-size: 3px 3px;
+  color: #714828;
+  font-weight: bold;
+  font-size: 12px;
+}
+/* line 43, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/topContainer/couponList.scss */
+.topCouponList-container .topCoupon-list .topCoupon-item .topCompany-detail {
+  padding: 10px;
+  background: #ff7400;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+@charset "UTF-8";
+/* firstVisualコンポーネント独自のスタイル */
+/* line 5, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/topContainer/firstVisual.scss */
+.firstVisual-container {
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+/* line 10, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/topContainer/firstVisual.scss */
+.firstVisual-container:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.3);
+}
+/* line 22, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/topContainer/firstVisual.scss */
+.firstVisual-container .title-container {
+  position: relative;
+  padding: 30px 0;
+  z-index: 9;
+}
+/* line 27, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/topContainer/firstVisual.scss */
+.firstVisual-container .title-container .appTitle {
+  font-size: 44px;
+  font-weight: bold;
+  font-family: 'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
+}
+/* line 33, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/topContainer/firstVisual.scss */
+.firstVisual-container .title-container .appSubTitle {
+  font-size: 11px;
+  font-weight: normal;
+}
+/* line 3, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/utility/unique.scss */
+.mb5 {
+  margin-bottom: 5px;
+}
+
+/* line 7, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/utility/unique.scss */
+.mt10 {
+  margin-top: 10px;
+}
+
+/* line 11, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/utility/unique.scss */
+.mb10 {
+  margin-bottom: 10px;
+}
+
+/* line 15, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/utility/unique.scss */
+.mb50 {
+  margin-bottom: 50px;
+}
+
+/* line 19, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/utility/unique.scss */
+.mt50 {
+  margin-top: 50px;
+}
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700,900|Sawarabi+Gothic&display=swap");
+/* line 3, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/foundation/base.scss */
+body {
+  margin: 0;
+  color: #333;
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",Osaka,arial,verdana,sans-serif;
+  background-color: #F4E6D7;
+}
+
+/* line 10, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/foundation/base.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 26, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/foundation/base.scss */
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* line 33, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/foundation/base.scss */
+figure.image {
+  margin: 0;
+}
+
+/* line 37, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/foundation/base.scss */
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+/* line 42, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/foundation/base.scss */
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 47, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/foundation/base.scss */
+.wrapper {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+/* line 3, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/layout/footer.scss */
+.footer {
+  background: #2f251d;
+  margin-top: 40px;
+}
+/* line 7, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/layout/footer.scss */
+.footer .footer-list {
+  text-align: center;
+  padding: 20px 0;
+}
+/* line 11, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/layout/footer.scss */
+.footer .footer-list .footerItem {
+  margin-bottom: 7px;
+}
+/* line 14, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/layout/footer.scss */
+.footer .footer-list .footerItem a {
+  color: #fff;
+}
+
+/* line 3, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/layout/tab.scss */
+.tab-container {
+  height: 50px;
+  background: #F0F0F0;
+}
+
+/* line 3, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/common.scss */
+.bg-style {
+  background-position: center center;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 12, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/common.scss */
+.couponTitle-block {
+  padding: 25px 10px;
+  background-image: linear-gradient(-45deg, #fff 25%, #fee0c7 25%, #fee0c7 50%, #fff 50%, #fff 75%, #fee0c7 75%, #fee0c7);
+  background-size: 3px 3px;
+}
+/* line 26, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/common.scss */
+.couponTitle-block.-modalBlock {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+/* line 31, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/common.scss */
+.couponTitle-block .couponTitle {
+  color: #714828;
+  font-size: 38px;
+  font-weight: 900;
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+}
+/* line 39, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/common.scss */
+.couponTitle-block .couponTitle.-modal {
+  font-size: 28px;
+}
+
+/* ボタンのデザイン */
+/* line 6, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/button.scss */
+.couponBtn-block .couponBtn {
+  background: #ff7400;
+  padding: 13px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #fff;
+  border-radius: 60px;
+  font-weight: bold;
+  border: 4px solid #fff;
+}
+/* line 17, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/button.scss */
+.couponBtn-block .couponBtn.-modal {
+  border: none;
+  padding: 16px;
+  font-size: 17px;
+}
+
+/* line 3, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/form.scss */
+.contact-container {
+  line-height: 1.6;
+  background: #fff;
+  padding: 20px;
+  margin: 30px auto;
+  width: 80%;
+  border-radius: 7px;
+}
+/* line 12, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/form.scss */
+.contact-container .contactTitle {
+  font-size: 32px;
+  text-align: center;
+  color: #714828;
+  margin-bottom: 20px;
+}
+/* line 19, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/form.scss */
+.contact-container .contact-box {
+  margin-bottom: 15px;
+}
+/* line 22, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/form.scss */
+.contact-container .contact-box .itemName {
+  font-size: 14px;
+}
+/* line 26, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/form.scss */
+.contact-container .contact-box .text-wrap {
+  margin-top: 3px;
+}
+/* line 29, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/form.scss */
+.contact-container .contact-box .text-wrap input[type="text"] {
+  width: 93%;
+  max-width: 400px;
+  padding: 10px;
+  background: #F0F0F0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* line 42, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/form.scss */
+.contact-container .contact-box .text-wrap textarea {
+  width: 93%;
+  height: 240px;
+  padding: 7px;
+  border: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: #F0F0F0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+/* line 57, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/form.scss */
+.contact-container .submit-wrap {
+  width: 100%;
+  margin: 40px auto 10px;
+}
+/* line 61, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/component/form.scss */
+.contact-container .submit-wrap input[type="submit"] {
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border-radius: 2px;
+  background-color: #ff9f4f;
+  color: #fff;
+  font-weight: bold;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  margin: 0 auto;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+/* line 4, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/topContainer/couponList.scss */
+.topCouponList-container .topCoupon-list {
+  width: 98%;
+  margin: 0 auto;
+}
+/* line 8, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/topContainer/couponList.scss */
+.topCouponList-container .topCoupon-list .topCoupon-item {
+  display: inline-block;
+  width: 47.6%;
+  margin-bottom: 6px;
+  border: 3px solid #fff;
+  border-radius: 3px;
+}
+/* line 15, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/topContainer/couponList.scss */
+.topCouponList-container .topCoupon-list .topCoupon-item:nth-child(odd) {
+  margin-right: 0;
+}
+/* line 19, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/topContainer/couponList.scss */
+.topCouponList-container .topCoupon-list .topCoupon-item .topCoupon-image {
+  height: 150px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+/* line 25, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/topContainer/couponList.scss */
+.topCouponList-container .topCoupon-list .topCoupon-item .topCoupon-detail {
+  padding: 5px 10px;
+  background-image: linear-gradient(-45deg, #fff 25%, #fee0c7 25%, #fee0c7 50%, #fff 50%, #fff 75%, #fee0c7 75%, #fee0c7);
+  background-size: 3px 3px;
+  color: #714828;
+  font-weight: bold;
+  font-size: 12px;
+}
+/* line 43, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/topContainer/couponList.scss */
+.topCouponList-container .topCoupon-list .topCoupon-item .topCompany-detail {
+  padding: 10px;
+  background: #ff7400;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+/* firstVisualコンポーネント独自のスタイル */
+/* line 5, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/topContainer/firstVisual.scss */
+.firstVisual-container {
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+/* line 10, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/topContainer/firstVisual.scss */
+.firstVisual-container:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.3);
+}
+/* line 22, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/topContainer/firstVisual.scss */
+.firstVisual-container .title-container {
+  position: relative;
+  padding: 30px 0;
+  z-index: 9;
+}
+/* line 27, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/topContainer/firstVisual.scss */
+.firstVisual-container .title-container .appTitle {
+  font-size: 44px;
+  font-weight: bold;
+  font-family: 'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
+}
+/* line 33, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/topContainer/firstVisual.scss */
+.firstVisual-container .title-container .appSubTitle {
+  font-size: 11px;
+  font-weight: normal;
+}
+
+/* line 4, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container {
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 9, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponImage-block .couponImage {
+  height: 360px;
+}
+/* line 14, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponDetail-block {
+  background-color: #2F251D;
+}
+/* line 17, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap {
+  width: 93%;
+  margin: 0 auto;
+  padding: 5px 0 20px;
+}
+/* line 22, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponCompany-block {
+  margin: 5px 0;
+}
+/* line 25, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponCompany-block .couponComapany {
+  text-align: right;
+  color: #fff;
+  font-size: 14px;
+}
+/* line 33, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponBtn-block .couponBtn {
+  background: #ff7400;
+  padding: 13px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #fff;
+  border-radius: 60px;
+  font-weight: bold;
+  border: 4px solid #fff;
+}
+/* line 46, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponUseTime-block {
+  color: #fff;
+  margin-top: 15px;
+}
+/* line 50, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponUseTime-block .useTitle {
+  font-size: 14px;
+}
+/* line 54, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponUseTime-block .useTime {
+  font-size: 24px;
+  font-weight: bold;
+}
+/* line 58, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponUseTime-block .useTime .otherDay {
+  font-size: 14px;
+  font-weight: normal;
+}
+/* line 66, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponInfo-block .couponInfo-item {
+  display: inline-block;
+  border: 2px solid #fff;
+  padding: 7px;
+  border-radius: 5px;
+  color: #fff;
+  width: 26.4%;
+  margin-right: 1%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 19px;
+}
+/* line 78, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponInfo-block .couponInfo-item:last-child {
+  margin-right: 0;
+}
+/* line 82, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/coupon.scss */
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponInfo-block .couponInfo-item .item-icon {
+  font-size: 37px;
+  margin: 5px 0 0;
+}
+
+/* line 4, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/couponModal.scss */
+.couponUse-wraper input {
+  display: none;
+}
+/* line 8, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/couponModal.scss */
+.couponUse-wraper .couponUse_overlay {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.5s, transform 0s 0.5s;
+  transform: scale(0);
+}
+/* line 23, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/couponModal.scss */
+.couponUse-wraper .couponUse_overlay .modal_trigger {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* line 29, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/couponModal.scss */
+.couponUse-wraper .couponUse_overlay .couponUse_container {
+  align-self: center;
+  width: 85%;
+  max-width: 350px;
+  box-sizing: border-box;
+  background: #FFEEE0;
+  line-height: 1.4em;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin-top: -80px;
+}
+/* line 40, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/couponModal.scss */
+.couponUse-wraper .couponUse_overlay .couponUse_container .couponUseDetail-block {
+  width: 95%;
+  margin: 15px auto;
+}
+/* line 43, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/couponModal.scss */
+.couponUse-wraper .couponUse_overlay .couponUse_container .couponUseDetail-block .detailExplanation-block {
+  text-align: center;
+  margin: 5px 0 10px;
+  color: #433D3D;
+  font-size: 12px;
+  line-height: 1.4;
+}
+/* line 53, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/couponModal.scss */
+.couponUse-wraper .couponUse_overlay .couponUse_container .couponUseImage-block .couponUseImage {
+  height: 280px;
+}
+/* line 58, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/couponModal.scss */
+.couponUse-wraper .couponUse_overlay .couponUse_container .close-block {
+  top: 562px;
+  left: 0;
+  right: 0;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  margin: 25px 0 30px;
+}
+/* line 68, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/couponModal.scss */
+.couponUse-wraper .couponUse_overlay .couponUse_container .close-block .closeBtn {
+  background: #fff;
+  border-radius: 39px;
+  padding: 10px;
+}
+
+/* line 78, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/couponModal.scss */
+.couponUse-wraper input:checked ~ .couponUse_overlay {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.5s;
+}
+
+/* line 84, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/couponContainer/couponModal.scss */
+.couponUse-wraper input:checked ~ .couponUse_overlay .couponUse_content {
+  transform: scale(1);
+}
+
+/* line 3, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/project/subContainer/sub.scss */
+.sub {
+  min-height: 700px;
+  margin-top: 100px;
+}
+
+/* line 3, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/utility/unique.scss */
+.mb5 {
+  margin-bottom: 5px;
+}
+
+/* line 7, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/utility/unique.scss */
+.mt10 {
+  margin-top: 10px;
+}
+
+/* line 11, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/utility/unique.scss */
+.mb10 {
+  margin-bottom: 10px;
+}
+
+/* line 15, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/utility/unique.scss */
+.mb50 {
+  margin-bottom: 50px;
+}
+
+/* line 19, /home/ec2-user/environment/smartApp/app/assets/stylesheets/sass/object/utility/unique.scss */
+.mt50 {
+  margin-top: 50px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700,900|Sawarabi+Gothic&display=swap");
+body {
+  margin: 0;
+  color: #333;
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",Osaka,arial,verdana,sans-serif;
+  background-color: #F4E6D7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+figure.image {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.footer {
+  background: #2f251d;
+  margin-top: 40px;
+}
+
+.footer .footer-list {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer .footer-list .footerItem {
+  margin-bottom: 7px;
+}
+
+.footer .footer-list .footerItem a {
+  color: #fff;
+}
+
+.tab-container {
+  height: 50px;
+  background: #F0F0F0;
+}
+
+.bg-style {
+  background-position: center center;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.couponTitle-block {
+  padding: 25px 10px;
+  background-image: linear-gradient(-45deg, #fff 25%, #fee0c7 25%, #fee0c7 50%, #fff 50%, #fff 75%, #fee0c7 75%, #fee0c7);
+  background-size: 3px 3px;
+}
+
+.couponTitle-block.-modalBlock {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.couponTitle-block .couponTitle {
+  color: #714828;
+  font-size: 38px;
+  font-weight: 900;
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.couponTitle-block .couponTitle.-modal {
+  font-size: 28px;
+}
+
+/* ボタンのデザイン */
+.couponBtn-block .couponBtn {
+  background: #ff7400;
+  padding: 13px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #fff;
+  border-radius: 60px;
+  font-weight: bold;
+  border: 4px solid #fff;
+}
+
+.couponBtn-block .couponBtn.-modal {
+  border: none;
+  padding: 16px;
+  font-size: 17px;
+}
+
+.contact-container {
+  line-height: 1.6;
+  background: #fff;
+  padding: 20px;
+  margin: 30px auto;
+  width: 80%;
+  border-radius: 7px;
+}
+
+.contact-container .contactTitle {
+  font-size: 32px;
+  text-align: center;
+  color: #714828;
+  margin-bottom: 20px;
+}
+
+.contact-container .contact-box {
+  margin-bottom: 15px;
+}
+
+.contact-container .contact-box .itemName {
+  font-size: 14px;
+}
+
+.contact-container .contact-box .text-wrap {
+  margin-top: 3px;
+}
+
+.contact-container .contact-box .text-wrap input[type="text"] {
+  width: 93%;
+  max-width: 400px;
+  padding: 10px;
+  background: #F0F0F0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.contact-container .contact-box .text-wrap textarea {
+  width: 93%;
+  height: 240px;
+  padding: 7px;
+  border: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: #F0F0F0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.contact-container .submit-wrap {
+  width: 100%;
+  margin: 40px auto 10px;
+}
+
+.contact-container .submit-wrap input[type="submit"] {
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border-radius: 2px;
+  background-color: #ff9f4f;
+  color: #fff;
+  font-weight: bold;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  margin: 0 auto;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.topCouponList-container .topCoupon-list {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.topCouponList-container .topCoupon-list .topCoupon-item {
+  display: inline-block;
+  width: 47.6%;
+  margin-bottom: 6px;
+  border: 3px solid #fff;
+  border-radius: 3px;
+}
+
+.topCouponList-container .topCoupon-list .topCoupon-item:nth-child(odd) {
+  margin-right: 0;
+}
+
+.topCouponList-container .topCoupon-list .topCoupon-item .topCoupon-image {
+  height: 150px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.topCouponList-container .topCoupon-list .topCoupon-item .topCoupon-detail {
+  padding: 5px 10px;
+  background-image: linear-gradient(-45deg, #fff 25%, #fee0c7 25%, #fee0c7 50%, #fff 50%, #fff 75%, #fee0c7 75%, #fee0c7);
+  background-size: 3px 3px;
+  color: #714828;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.topCouponList-container .topCoupon-list .topCoupon-item .topCompany-detail {
+  padding: 10px;
+  background: #ff7400;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+/* firstVisualコンポーネント独自のスタイル */
+.firstVisual-container {
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.firstVisual-container:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.firstVisual-container .title-container {
+  position: relative;
+  padding: 30px 0;
+  z-index: 9;
+}
+
+.firstVisual-container .title-container .appTitle {
+  font-size: 44px;
+  font-weight: bold;
+  font-family: 'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
+}
+
+.firstVisual-container .title-container .appSubTitle {
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.coupon .coupon-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.coupon .coupon-container .couponImage-block .couponImage {
+  height: 360px;
+}
+
+.coupon .coupon-container .couponDetail-block {
+  background-color: #2F251D;
+}
+
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap {
+  width: 93%;
+  margin: 0 auto;
+  padding: 5px 0 20px;
+}
+
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponCompany-block {
+  margin: 5px 0;
+}
+
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponCompany-block .couponComapany {
+  text-align: right;
+  color: #fff;
+  font-size: 14px;
+}
+
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponBtn-block .couponBtn {
+  background: #ff7400;
+  padding: 13px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #fff;
+  border-radius: 60px;
+  font-weight: bold;
+  border: 4px solid #fff;
+}
+
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponUseTime-block {
+  color: #fff;
+  margin-top: 15px;
+}
+
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponUseTime-block .useTitle {
+  font-size: 14px;
+}
+
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponUseTime-block .useTime {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponUseTime-block .useTime .otherDay {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponInfo-block .couponInfo-item {
+  display: inline-block;
+  border: 2px solid #fff;
+  padding: 7px;
+  border-radius: 5px;
+  color: #fff;
+  width: 26.4%;
+  margin-right: 1%;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 19px;
+}
+
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponInfo-block .couponInfo-item:last-child {
+  margin-right: 0;
+}
+
+.coupon .coupon-container .couponDetail-block .couponDetail-wrap .couponInfo-block .couponInfo-item .item-icon {
+  font-size: 37px;
+  margin: 5px 0 0;
+}
+
+.couponUse-wraper input {
+  display: none;
+}
+
+.couponUse-wraper .couponUse_overlay {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.5s, transform 0s 0.5s;
+  transform: scale(0);
+}
+
+.couponUse-wraper .couponUse_overlay .modal_trigger {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.couponUse-wraper .couponUse_overlay .couponUse_container {
+  align-self: center;
+  width: 85%;
+  max-width: 350px;
+  box-sizing: border-box;
+  background: #FFEEE0;
+  line-height: 1.4em;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin-top: -80px;
+}
+
+.couponUse-wraper .couponUse_overlay .couponUse_container .couponUseDetail-block {
+  width: 95%;
+  margin: 15px auto;
+}
+
+.couponUse-wraper .couponUse_overlay .couponUse_container .couponUseDetail-block .detailExplanation-block {
+  text-align: center;
+  margin: 5px 0 10px;
+  color: #433D3D;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.couponUse-wraper .couponUse_overlay .couponUse_container .couponUseImage-block .couponUseImage {
+  height: 280px;
+}
+
+.couponUse-wraper .couponUse_overlay .couponUse_container .close-block {
+  top: 562px;
+  left: 0;
+  right: 0;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  margin: 25px 0 30px;
+}
+
+.couponUse-wraper .couponUse_overlay .couponUse_container .close-block .closeBtn {
+  background: #fff;
+  border-radius: 39px;
+  padding: 10px;
+}
+
+.couponUse-wraper input:checked ~ .couponUse_overlay {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.5s;
+}
+
+.couponUse-wraper input:checked ~ .couponUse_overlay .couponUse_content {
+  transform: scale(1);
+}
+
+.sub {
+  min-height: 700px;
+  margin-top: 100px;
+}
+
+.mb5 {
+  margin-bottom: 5px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb50 {
+  margin-bottom: 50px;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+

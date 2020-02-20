@@ -1,0 +1,26 @@
+<div class="sub">
+  <div class="commonBox-container -used">
+    <h2 class="contactTitle">クーポンご使用<br>ありがとうございます！</h2>
+    <div class="usedCoupon-text">
+      <p>こちらのクーポンを<br>お店の定員さんに見せてください</p>
+    </div>
+    <div class="couponImage-block">
+      <div class="couponImage bg-style" style="background-image: url('<%= " /images/coupon_eyecatch/img_coupon#{@coupon.id}.jpg " %>');">
+        <% if @coupon.flag == 1 %>
+          <div class="topCoupon-flag">
+            <p>3ヶ月に1回のみ</p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="couponTitle-block -used">
+      <h3 class="couponTitle">
+        <%= simple_format(@coupon.couponTitle) %>
+      </h3>
+      <p class="couponStoreName"><%= @coupon.storeName %></p>
+    </div>
+    <div class="submit-wrap -other">
+      <%= link_to("TOPに戻る", "/") %>
+    </div>
+  </div>
+</div>

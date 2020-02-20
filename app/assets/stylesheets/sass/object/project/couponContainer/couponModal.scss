@@ -1,0 +1,73 @@
+@import "../../../extention/color";
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  
+  .modal-content {
+    background: $color-lightWhitePink;
+    width: 85%;
+    max-width: 350px;
+    margin: 20% auto;
+    
+    .couponUse_container {
+      .couponUseImage-block {
+        .couponUseImage {
+          height: 280px;
+        }
+      }
+      
+      .couponUseDetail-block {
+        width: 95%;
+        margin: 15px auto;
+        position: relative;
+        height: 163px;
+        
+        .detailExplanation-block {
+          text-align: center;
+          margin: 5px 0 10px;
+          color: #433D3D;
+          font-size: 12px;
+          line-height: 1.4;
+          
+          &.-infoBlock {
+            font-size: 17px;
+            line-height: 1.8;
+          }
+        }
+      }
+      
+      .close-block {
+        position: absolute;
+        top: 86px;
+        left: 0;
+        right: 0;
+        font-size: 24px;
+        text-align: center;
+        cursor: pointer;
+        margin: 25px 0 30px;
+        
+        .closeBtn {
+          background: $color-white;
+          border-radius: 39px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+  
+  &.-info {
+    .modal-content {
+      .couponUse_container {
+        position: relative;
+      }
+    }
+  }
+}

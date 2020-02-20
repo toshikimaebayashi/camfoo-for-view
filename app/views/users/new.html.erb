@@ -1,0 +1,30 @@
+<div class="sub">
+  <div class="commonBox-container">
+    <h2 class="contactTitle">会員登録</h2>
+    
+    <% @user.errors.full_messages.each do |message| %>
+      <div class="form-error">
+        <%= message %>
+      </div>
+    <% end %>
+        
+    <%= form_tag("/users/create") do %>
+      <div class="contact-box"> <span class="itemName">名前</span>
+        <div class="text-wrap"> <input type="text" name="name" value=""> </div>
+      </div>
+      <div class="contact-box"> <span class="itemName">メールアドレス</span>
+        <div class="text-wrap"> <input type="text" name="email" value=""> </div>
+      </div>
+      <div class="contact-box">
+          <span class="itemName">パスワード</span>
+          <div class="text-wrap">
+            <input type="password" name="password" value="">
+          </div>
+        </div>
+      <div class="submit-wrap"> 
+        <input type="submit" name="" value="新規会員登録（無料）"> 
+      </div>
+    <% end %>
+    
+  </div>
+</div>

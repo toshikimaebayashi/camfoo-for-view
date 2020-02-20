@@ -1,0 +1,18 @@
+@import "../extention/color";
+
+ footer {
+  background: $color-darkBrawn;
+  padding: 15px 0;
+
+  .footer-list {
+    text-align: center;
+
+    .footerItem {
+      a {
+        color: $color-white;
+        font-weight: bold;
+        font-size: 13px;
+      }
+    }
+  }
+}
