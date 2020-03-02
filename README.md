@@ -1,24 +1,42 @@
-# README
+# Name
+Camfoo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+大学のキャンパスに特化したクーポンアプリ
 
-Things you may want to cover:
+# Inspire
+大学1,2年の時に通っていたキャンパスで昼にキャンパス周りの店がどこも混んでいた。少し探せば美味しい店はたくさんあるものの、学生の目に届かない場所にあるせいかお客さんの数が少なかった。正直、キャンパス周りの繁盛している店（チェーン店も含めて）よりも美味しい店はたくさんあり、立地や変動費をかけられないせいでお客さんにリーチできないのはもったいないと思った。その情報の非対称をなくしたいなと思って、クーポンアプリを作ったのがきっかけです。
 
-* Ruby version
+# Link
+http://camfoo.jp/lp
 
-* System dependencies
+# Functions
+- ログイン後に利用可能な機能
+  - 一覧機能
+  - クーポン追加機能
+  - 特定のクーポンのみ一度使ったら使えない
 
-* Configuration
+- 大枠の流れ 
+  - /admin/couponにてクーポン情報追加
+  - /でクーポン一覧表示
+  - /coupon/:id で個別クーポン表示
+  - /coupon/:usedcoupon/:id クーポン利用完了
 
-* Database creation
+# Tools
+- フロント
+  - HTML
+  - Scss
+- バックエンド
+  - Ruby
+  - Rails
+- OS
+  - Linux
+- DB
+  - PostgreSQL
+- サーバー
+  - Heroku
 
-* Database initialization
+# Note
+スマホの方が操作性はいいと思います
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Comment
+これからAWS移行、フロントをRectに書き換え、iosとしてreactNativeを使って開発したいと思っています。
